@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--/*@thymesVar id="pageModel" type="de.nulldrei.frontend.startpage.StartPageModel"*/-->
+<!--<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>-->
+<head>
+	<title th:text="${pageModel.title}"></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" th:href="@{/css/theme/bootstrap.min.css}"
+			href="/css/theme/bootstrap.min.css"/>
+	<link rel="stylesheet" th:href="@{/css/theme/icomoon-social.css}"
+			href="/css/theme/icomoon-social.css"/>
+	<link rel="stylesheet" th:href="@{/css/theme/leaflet.css}"
+			href="/css/theme/leaflet.css"/>
+	<link rel="stylesheet" th:href="@{/css/theme/main.css}"
+			href="/css/theme/main.css"/>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+        <!-- Navigation & Logo-->
+        <div class="mainmenu-wrapper">
+	        <div class="container">
+	        	<div class="menuextras">
+					<div class="extras">
+						<ul>
+							<li class="shopping-cart-items"><i class="glyphicon glyphicon-shopping-cart icon-white"></i> <a href="page-shopping-cart.html"><b>3 items</b></a></li>
+							<li>
+								<div class="dropdown choose-country">
+									<a class="#" data-toggle="dropdown" href="#"><img src="img/flags/gb.png" alt="Great Britain"> UK</a>
+									<ul class="dropdown-menu" role="menu">
+										<li role="menuitem"><a href="#"><img src="img/flags/us.png" alt="United States"> US</a></li>
+										<li role="menuitem"><a href="#"><img src="img/flags/de.png" alt="Germany"> DE</a></li>
+										<li role="menuitem"><a href="#"><img src="img/flags/es.png" alt="Spain"> ES</a></li>
+									</ul>
+								</div>
+							</li>
+			        		<li><a href="page-login.html">Login</a></li>
+			        	</ul>
+					</div>
+		        </div>
+		        <nav id="mainmenu" class="mainmenu">
+					<ul>
+						<li class="logo-wrapper"><a href="index.html"><img src="img/mPurpose-logo.png" alt="Multipurpose Twitter Bootstrap Template"></a></li>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="features.html">Features</a>
+						</li>
+						<li class="has-submenu active">
+							<a href="#">Pages +</a>
+							<div class="mainmenu-submenu">
+								<div class="mainmenu-submenu-inner"> 
+									<div>
+										<h4>Homepage</h4>
+										<ul>
+											<li><a href="index.html">Homepage (Sample 1)</a></li>
+											<li><a href="page-homepage-sample.html">Homepage (Sample 2)</a></li>
+										</ul>
+									</div>
+									<div>
+										<h4>General Pages</h4>
+										<ul>
+											<li><a href="page-about-us.html">About Us</a></li>
+											<li><a href="page-contact-us.html">Contact Us</a></li>
+											<li><a href="page-faq.html">Frequently Asked Questions</a></li>
+											<li><a href="page-testimonials-clients.html">Testimonials & Clients</a></li>
+											<li><a href="page-events.html">Events</a></li>
+											<li><a href="page-404.html">404 Page</a></li>
+											<li><a href="page-sitemap.html">Sitemap</a></li>
+											<li><a href="page-login.html">Login</a></li>
+											<li><a href="page-register.html">Register</a></li>
+											<li><a href="page-password-reset.html">Password Reset</a></li>
+											<li><a href="page-terms-privacy.html">Terms & Privacy</a></li>
+											<li><a href="page-coming-soon.html">Coming Soon</a></li>
+										</ul>
+									</div>
+									<div>
+										<h4>eShop</h4>
+										<ul>
+											<li><a href="page-products-3-columns.html">Products listing (3 Columns)</a></li>
+											<li><a href="page-products-4-columns.html">Products listing (4 Columns)</a></li>
+											<li><a href="page-products-slider.html">Products Slider</a></li>
+											<li><a href="page-product-details.html">Product Details</a></li>
+											<li><a href="page-shopping-cart.html">Shopping Cart</a></li>
+										</ul>
+										<h4>Blog</h4>
+										<ul>
+											<li><a href="page-blog-posts.html">Blog Posts (List)</a></li>
+											<li><a href="page-blog-post-right-sidebar.html">Blog Single Post (Right Sidebar)</a></li>
+											<li><a href="page-blog-post-left-sidebar.html">Blog Single Post (Left Sidebar)</a></li>
+											<li><a href="page-news.html">Latest & Featured News</a></li>
+										</ul>
+									</div>
+								</div><!-- /mainmenu-submenu-inner -->
+							</div><!-- /mainmenu-submenu -->
+						</li>
+						<li>
+							<a href="credits.html">Credits</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+        <!-- Page Title -->
+		<div class="section section-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>News</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <!-- Posts List -->
+        <div class="section blog-posts-wrapper">
+	    	<div class="container">
+				<div class="row">
+					<!-- Post -->
+					<div class="col-md-4 col-sm-6">
+						<div class="blog-post">
+							<!-- Post Info -->
+							<div class="post-info">
+								<div class="post-date">
+									<div class="date">30 JAN, 2013</div>
+								</div>
+								<div class="post-comments-count">
+									<a href="page-blog-post-right-sidebar.html" title="Show Comments"><i class="glyphicon glyphicon-comment icon-white"></i>11</a>
+								</div>
+							</div>
+							<!-- End Post Info -->
+							<!-- Post Image -->
+							<a href="page-blog-post-right-sidebar.html"><img src="img/blog1.jpg" class="post-image" alt="Post Title"></a>
+							<!-- End Post Image -->
+							<!-- Post Title & Summary -->
+							<div class="post-title">
+								<h3><a href="page-blog-post-right-sidebar.html">Post Title</a></h3>
+							</div>
+							<div class="post-summary">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium malesuada, dui est laoreet risus, ac rhoncus eros diam id odio. Duis elementum ligula eu ipsum condimentum accumsan.</p>
+							</div>
+							<!-- End Post Title & Summary -->
+							<div class="post-more">
+								<a href="page-blog-post-right-sidebar.html" class="btn btn-small">Read more</a>
+							</div>
+						</div>
+					</div>
+					<!-- End Post -->
+					<div class="col-md-4 col-sm-6">
+						<div class="blog-post">
+							<div class="post-info">
+								<div class="post-date">
+									<div class="date">30 JAN, 2013</div>
+								</div>
+								<div class="post-comments-count">
+									<a href="page-blog-post-right-sidebar.html" title="Show Comments"><i class="glyphicon glyphicon-comment icon-white"></i>16</a>
+								</div>
+							</div>
+							<a href="page-blog-post-right-sidebar.html"><img src="img/blog2.jpg" class="post-image" alt="Post Title"></a>
+							<div class="post-title">
+								<h3><a href="page-blog-post-right-sidebar.html">Another Post Title</a></h3>
+							</div>
+							<div class="post-summary">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium malesuada, dui est laoreet risus, ac rhoncus eros diam id odio. Duis elementum ligula eu ipsum condimentum accumsan.</p>
+							</div>
+							<div class="post-more">
+								<a href="page-blog-post-right-sidebar.html" class="btn btn-small">Read more</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="blog-post">
+							<div class="post-info">
+								<div class="post-date">
+									<div class="date">30 JAN, 2013</div>
+								</div>
+								<div class="post-comments-count">
+									<a href="page-blog-post-right-sidebar.html" title="Show Comments"><i class="glyphicon glyphicon-comment icon-white"></i>57</a>
+								</div>
+							</div>
+							<a href="page-blog-post-right-sidebar.html"><img src="img/blog3.jpg" class="post-image" alt="Post Title"></a>
+							<div class="post-title">
+								<h3><a href="page-blog-post-right-sidebar.html">Yet Another Post Title</a></h3>
+							</div>
+							<div class="post-summary">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium malesuada, dui est laoreet risus, ac rhoncus eros diam id odio. Duis elementum ligula eu ipsum condimentum accumsan.</p>
+							</div>
+							<div class="post-more">
+								<a href="page-blog-post-right-sidebar.html" class="btn btn-small">Read more</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="blog-post">
+							<div class="post-info">
+								<div class="post-date">
+									<div class="date">30 JAN, 2013</div>
+								</div>
+								<div class="post-comments-count">
+									<a href="page-blog-post-right-sidebar.html" title="Show Comments"><i class="glyphicon glyphicon-comment icon-white"></i>11</a>
+								</div>
+							</div>
+							<a href="page-blog-post-right-sidebar.html"><img src="img/blog1.jpg" class="post-image" alt="Post Title"></a>
+							<div class="post-title">
+								<h3><a href="page-blog-post-right-sidebar.html">Post Title</a></h3>
+							</div>
+							<div class="post-summary">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium malesuada, dui est laoreet risus, ac rhoncus eros diam id odio. Duis elementum ligula eu ipsum condimentum accumsan.</p>
+							</div>
+							<div class="post-more">
+								<a href="page-blog-post-right-sidebar.html" class="btn btn-small">Read more</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="blog-post">
+							<div class="post-info">
+								<div class="post-date">
+									<div class="date">30 JAN, 2013</div>
+								</div>
+								<div class="post-comments-count">
+									<a href="page-blog-post-right-sidebar.html" title="Show Comments"><i class="glyphicon glyphicon-comment icon-white"></i>16</a>
+								</div>
+							</div>
+							<a href="page-blog-post-right-sidebar.html"><img src="img/blog2.jpg" class="post-image" alt="Post Title"></a>
+							<div class="post-title">
+								<h3><a href="page-blog-post-right-sidebar.html">Another Post Title</a></h3>
+							</div>
+							<div class="post-summary">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium malesuada, dui est laoreet risus, ac rhoncus eros diam id odio. Duis elementum ligula eu ipsum condimentum accumsan.</p>
+							</div>
+							<div class="post-more">
+								<a href="page-blog-post-right-sidebar.html" class="btn btn-small">Read more</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="blog-post">
+							<div class="post-info">
+								<div class="post-date">
+									<div class="date">30 JAN, 2013</div>
+								</div>
+								<div class="post-comments-count">
+									<a href="page-blog-post-right-sidebar.html" title="Show Comments"><i class="glyphicon glyphicon-comment icon-white"></i>57</a>
+								</div>
+							</div>
+							<a href="page-blog-post-right-sidebar.html"><img src="img/blog3.jpg" class="post-image" alt="Post Title"></a>
+							<div class="post-title">
+								<h3><a href="page-blog-post-right-sidebar.html">Yet Another Post Title</a></h3>
+							</div>
+							<div class="post-summary">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium malesuada, dui est laoreet risus, ac rhoncus eros diam id odio. Duis elementum ligula eu ipsum condimentum accumsan.</p>
+							</div>
+							<div class="post-more">
+								<a href="page-blog-post-right-sidebar.html" class="btn btn-small">Read more</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	    </div>
+
+        <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+        <script src="js/jquery.fitvids.js"></script>
+        <script src="js/jquery.sequence-min.js"></script>
+        <script src="js/jquery.bxslider.js"></script>
+        <script src="js/main-menu.js"></script>
+        <script src="js/template.js"></script>
+		<script src="/webjars/jquery/3.0.0/jquery.min.js" type="application/javascript"></script>
+		<script src="/webjars/bootstrap/3.0.0/js/bootstrap.min.js" type="application/javascript"></script>
+
+    </body>
+</html>

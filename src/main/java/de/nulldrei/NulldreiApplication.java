@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
-import de.nulldrei.startpage.StartPageConfig;
+import de.nulldrei.frontend.startpage.StartPageKeys;
 
 @SpringBootApplication
-@EnableConfigurationProperties(StartPageConfig.class)
+@EnableConfigurationProperties(StartPageKeys.class)
 public class NulldreiApplication {
 
 	public static void main(String[] args) {

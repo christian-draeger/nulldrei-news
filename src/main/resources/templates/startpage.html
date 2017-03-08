@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<!--/*@thymesVar id="pageModel" type="de.nulldrei.startpage.StartPageModel"*/-->
+<!--/*@thymesVar id="pageModel" type="de.nulldrei.frontend.startpage.StartPageModel"*/-->
     <head>
         <title th:text="${pageModel.title}"></title>
 
@@ -24,11 +24,59 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#kontakt">Kontakt</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+
+        <!-- contact modal -->
+        <div class="modal fade" id="kontakt" role="dialog" data-success="Vielen Dank für Ihre Rückmeldung">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Kontakt</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Sie haben Fragen? Schreiben Sie uns.</p>
+                        <form>
+                            <fieldset>
+                                <input type="text" name="email-adresse" value="" placeholder="Ihre E-Mail"/>
+                            </fieldset>
+                            <fieldset>
+                                <textarea placeholder="Ihre Nachricht"></textarea>
+                                <div class="g-recaptcha" data-sitekey="6LfyShcUAAAAAJM6_7lrLzQUG1XcbGAAJRSO8s3a"></div>
+                            </fieldset>
+                            <fieldset>
+                                <button type="submit" class="btn btn-primary">Absenden</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- error modal -->
+        <div class="modal animated shake" id="codegenerator-error" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body clearfix text-center">
+                        <p>Es ist ein Problem aufgetreten.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
 
     </body>
 

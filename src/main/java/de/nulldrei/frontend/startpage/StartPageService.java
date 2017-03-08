@@ -1,4 +1,4 @@
-package de.nulldrei.startpage;
+package de.nulldrei.frontend.startpage;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -7,12 +7,12 @@ import org.springframework.stereotype.Component;
 public class StartPageService {
 
     @Autowired
-    private StartPageConfig startPageConfig;
+    private StartPageKeys startPageKeys;
 
     public StartPageModel create() {
         return StartPageModel.builder()
-                .title(startPageConfig.getTitle())
-                .headline(startPageConfig.getHeadline())
+                .title(startPageKeys.getTitle())
+                .headline(startPageKeys.getHeadline())
                 .build();
     }
 }

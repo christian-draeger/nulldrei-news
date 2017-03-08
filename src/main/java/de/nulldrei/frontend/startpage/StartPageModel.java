@@ -1,4 +1,4 @@
-package de.nulldrei.startpage;
+package de.nulldrei.frontend.startpage;
 
 import lombok.Builder;
 import lombok.Value;
