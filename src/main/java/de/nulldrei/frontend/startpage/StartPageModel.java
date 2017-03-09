@@ -2,7 +2,7 @@ package de.nulldrei.frontend.startpage;
 
 import java.util.List;
 
-import de.nulldrei.server.pnn.PnnElement;
+import de.nulldrei.server.crawler.NewsItem;
 
 import lombok.Builder;
 import lombok.Value;
@@ -12,5 +12,5 @@ import lombok.Value;
 public class StartPageModel {
     String headline;
     String title;
-    List<PnnElement> pnnElements;
+    List<NewsItem> newsItems;
 }

@@ -3,7 +3,7 @@ package de.nulldrei.frontend.startpage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import de.nulldrei.server.pnn.Pnn;
+import de.nulldrei.server.officialpage.OfficialPage;
 
 @Component
 public class StartPageService {
@@ -12,13 +12,13 @@ public class StartPageService {
     private StartPageKeys startPageKeys;
 
     @Autowired
-    private Pnn pnn;
+    private OfficialPage officialPage;
 
     public StartPageModel create() {
         return StartPageModel.builder()
                 .title(startPageKeys.getTitle())
                 .headline(startPageKeys.getHeadline())
-                .pnnElements(pnn.getPnn())
+                .newsItems(officialPage.getItems())
                 .build();
     }
 }

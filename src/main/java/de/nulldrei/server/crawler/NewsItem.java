@@ -1,4 +1,4 @@
-package de.nulldrei.server.pnn;
+package de.nulldrei.server.crawler;
 
 import org.springframework.stereotype.Component;
 
@@ -13,9 +13,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @Component
-public class PnnElement {
+public class NewsItem {
     private String title;
     private String conclusion;
     private String pictureUrl;
     private String link;
+    private String date;
+    private String author;
 }
