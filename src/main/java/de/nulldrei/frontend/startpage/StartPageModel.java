@@ -1,5 +1,9 @@
 package de.nulldrei.frontend.startpage;
 
+import java.util.List;
+
+import de.nulldrei.server.pnn.PnnElement;
+
 import lombok.Builder;
 import lombok.Value;
 
@@ -8,4 +12,5 @@ import lombok.Value;
 public class StartPageModel {
     String headline;
     String title;
+    List<PnnElement> pnnElements;
 }

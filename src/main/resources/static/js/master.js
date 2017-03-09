@@ -34,4 +34,5 @@ $(document).ready(function() {
     };
 
     feedback_dialog.find('form').submit(contact_submit);
+
 });
