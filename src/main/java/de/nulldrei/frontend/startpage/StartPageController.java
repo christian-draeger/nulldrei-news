@@ -12,21 +12,11 @@ public class StartPageController {
     private StartPageService startPageService;
 
     @RequestMapping("/")
-    public ModelAndView welcome() {
+    public ModelAndView blog() {
         return createView();
     }
 
-    @RequestMapping("/blog")
-    public ModelAndView blog() {
-        return createViewBlog();
-    }
-
     private ModelAndView createView() {
-        StartPageModel model = startPageService.create();
-        return new ModelAndView("startpage", "pageModel", model);
-    }
-
-    private ModelAndView createViewBlog() {
         StartPageModel model = startPageService.create();
         return new ModelAndView("page-blog-posts", "pageModel", model);
     }

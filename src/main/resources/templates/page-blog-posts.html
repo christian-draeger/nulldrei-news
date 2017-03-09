@@ -1,180 +1,252 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <!--/*@thymesVar id="pageModel" type="de.nulldrei.frontend.startpage.StartPageModel"*/-->
-<!--<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>-->
-	<head>
-		<title th:text="${pageModel.title}"></title>
-		<link rel="stylesheet" th:href="@{/css/theme/bootstrap.min.css}"
-				href="/css/theme/bootstrap.min.css"/>
-		<link rel="stylesheet" th:href="@{/css/theme/icomoon-social.css}"
-				href="/css/theme/icomoon-social.css"/>
-		<link rel="stylesheet" th:href="@{/css/theme/leaflet.css}"
-				href="/css/theme/leaflet.css"/>
-		<link rel="stylesheet" th:href="@{/css/theme/main.css}"
-				href="/css/theme/main.css"/>
+<head>
+    <title th:text="${pageModel.title}"></title>
+    <link rel="stylesheet" th:href="@{/css/theme/bootstrap.min.css}"
+            href="/css/theme/bootstrap.min.css"/>
+    <link rel="stylesheet" th:href="@{/css/theme/main.css}"
+            href="/css/theme/main.css"/>
+    <link rel="stylesheet" th:href="@{/css/common.css}"
+            href="/css/common.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'/>
+</head>
+<body>
+<!-- Page Title -->
+<div class="section section-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Nulldrei News</h1>
+                <ul>
+                    <li><a href="#" data-toggle="modal" data-target="#kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'/>
-	</head>
-	<body>
-        <!-- Page Title -->
-		<div class="section section-breadcrumbs">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1>News</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-        
-        <!-- Posts List -->
-        <div class="section blog-posts-wrapper">
-	    	<div class="container">
-				<div class="row">
-					<!-- Post -->
-					<div class="col-md-4 col-sm-6">
-						<div class="blog-post">
-							<!-- Post Info -->
-							<div class="post-info">
-								<div class="post-date">
-									<div class="date">08 MAR, 2017</div>
-								</div>
-								<div class="post-comments-count">
-									<a href="page-blog-post-right-sidebar.html" title="Show Comments"><i class="glyphicon glyphicon-comment icon-white"></i>11</a>
-								</div>
-							</div>
-							<!-- End Post Info -->
-							<!-- Post Image -->
-							<a href="page-blog-post-right-sidebar.html"><img src="img/blog1.jpg" class="post-image" alt="Post Title"/></a>
-							<!-- End Post Image -->
-							<!-- Post Title & Summary -->
-							<div class="post-title">
-								<h3><a href="page-blog-post-right-sidebar.html">Post Title</a></h3>
-							</div>
-							<div class="post-summary">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium malesuada, dui est laoreet risus, ac rhoncus eros diam id odio. Duis elementum ligula eu ipsum condimentum accumsan.</p>
-							</div>
-							<!-- End Post Title & Summary -->
-							<div class="post-more">
-								<a href="page-blog-post-right-sidebar.html" class="btn btn-small">Read more</a>
-							</div>
-						</div>
-					</div>
-					<!-- End Post -->
-					<div class="col-md-4 col-sm-6">
-						<div class="blog-post">
-							<div class="post-info">
-								<div class="post-date">
-									<div class="date">08 MAR, 2017</div>
-								</div>
-								<div class="post-comments-count">
-									<a href="page-blog-post-right-sidebar.html" title="Show Comments"><i class="glyphicon glyphicon-comment icon-white"></i>16</a>
-								</div>
-							</div>
-							<a href="page-blog-post-right-sidebar.html"><img src="img/blog2.jpg" class="post-image" alt="Post Title"/></a>
-							<div class="post-title">
-								<h3><a href="page-blog-post-right-sidebar.html">Another Post Title</a></h3>
-							</div>
-							<div class="post-summary">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium malesuada, dui est laoreet risus, ac rhoncus eros diam id odio. Duis elementum ligula eu ipsum condimentum accumsan.</p>
-							</div>
-							<div class="post-more">
-								<a href="page-blog-post-right-sidebar.html" class="btn btn-small">Read more</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="blog-post">
-							<div class="post-info">
-								<div class="post-date">
-									<div class="date">08 MAR, 2017</div>
-								</div>
-								<div class="post-comments-count">
-									<a href="page-blog-post-right-sidebar.html" title="Show Comments"><i class="glyphicon glyphicon-comment icon-white"></i>57</a>
-								</div>
-							</div>
-							<a href="page-blog-post-right-sidebar.html"><img src="img/blog3.jpg" class="post-image" alt="Post Title"/></a>
-							<div class="post-title">
-								<h3><a href="page-blog-post-right-sidebar.html">Yet Another Post Title</a></h3>
-							</div>
-							<div class="post-summary">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium malesuada, dui est laoreet risus, ac rhoncus eros diam id odio. Duis elementum ligula eu ipsum condimentum accumsan.</p>
-							</div>
-							<div class="post-more">
-								<a href="page-blog-post-right-sidebar.html" class="btn btn-small">Read more</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="blog-post">
-							<div class="post-info">
-								<div class="post-date">
-									<div class="date">08 MAR, 2017</div>
-								</div>
-								<div class="post-comments-count">
-									<a href="page-blog-post-right-sidebar.html" title="Show Comments"><i class="glyphicon glyphicon-comment icon-white"></i>11</a>
-								</div>
-							</div>
-							<a href="page-blog-post-right-sidebar.html"><img src="img/blog1.jpg" class="post-image" alt="Post Title"/></a>
-							<div class="post-title">
-								<h3><a href="page-blog-post-right-sidebar.html">Post Title</a></h3>
-							</div>
-							<div class="post-summary">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium malesuada, dui est laoreet risus, ac rhoncus eros diam id odio. Duis elementum ligula eu ipsum condimentum accumsan.</p>
-							</div>
-							<div class="post-more">
-								<a href="page-blog-post-right-sidebar.html" class="btn btn-small">Read more</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="blog-post">
-							<div class="post-info">
-								<div class="post-date">
-									<div class="date">08 MAR, 2017</div>
-								</div>
-								<div class="post-comments-count">
-									<a href="page-blog-post-right-sidebar.html" title="Show Comments"><i class="glyphicon glyphicon-comment icon-white"></i>16</a>
-								</div>
-							</div>
-							<a href="page-blog-post-right-sidebar.html"><img src="img/blog2.jpg" class="post-image" alt="Post Title"/></a>
-							<div class="post-title">
-								<h3><a href="page-blog-post-right-sidebar.html">Another Post Title</a></h3>
-							</div>
-							<div class="post-summary">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium malesuada, dui est laoreet risus, ac rhoncus eros diam id odio. Duis elementum ligula eu ipsum condimentum accumsan.</p>
-							</div>
-							<div class="post-more">
-								<a href="page-blog-post-right-sidebar.html" class="btn btn-small">Read more</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="blog-post">
-							<div class="post-info">
-								<div class="post-date">
-									<div class="date">08 MAR, 2017</div>
-								</div>
-								<div class="post-comments-count">
-									<a href="page-blog-post-right-sidebar.html" title="Show Comments"><i class="glyphicon glyphicon-comment icon-white"></i>57</a>
-								</div>
-							</div>
-							<a href="page-blog-post-right-sidebar.html"><img src="img/blog3.jpg" class="post-image" alt="Post Title"/></a>
-							<div class="post-title">
-								<h3><a href="page-blog-post-right-sidebar.html">Yet Another Post Title</a></h3>
-							</div>
-							<div class="post-summary">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium malesuada, dui est laoreet risus, ac rhoncus eros diam id odio. Duis elementum ligula eu ipsum condimentum accumsan.</p>
-							</div>
-							<div class="post-more">
-								<a href="page-blog-post-right-sidebar.html" class="btn btn-small">Read more</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-	    </div>
-		<script src="/webjars/jquery/3.0.0/jquery.min.js" type="application/javascript"></script>
-		<script src="/webjars/bootstrap/3.0.0/js/bootstrap.min.js" type="application/javascript"></script>
-    </body>
+<!-- Posts List -->
+<div class="section blog-posts-wrapper">
+    <div class="container">
+        <div class="row">
+            <!-- Post -->
+            <div class="col-md-4 col-sm-6">
+                <div class="blog-post animated bounceInUp">
+                    <!-- Post Info -->
+                    <div class="post-info">
+                        <div class="post-date">
+                            <div class="date">08 MAR, 2017</div>
+                        </div>
+                        <div class="post-comments-count">
+                            <a href="page-blog-post-right-sidebar.html" title="Show Comments"><i
+                                    class="glyphicon glyphicon-comment icon-white"></i>11</a>
+                        </div>
+                    </div>
+                    <!-- End Post Info -->
+                    <!-- Post Image -->
+                    <a href="page-blog-post-right-sidebar.html"><img src="img/blog1.jpg" class="post-image"
+                            alt="Post Title"/></a>
+                    <!-- End Post Image -->
+                    <!-- Post Title & Summary -->
+                    <div class="post-title">
+                        <h3><a href="page-blog-post-right-sidebar.html">Post Title</a></h3>
+                    </div>
+                    <div class="post-summary">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium
+                            malesuada, dui est laoreet risus, ac rhoncus eros diam id odio. Duis elementum ligula eu
+                            ipsum condimentum accumsan.</p>
+                    </div>
+                    <!-- End Post Title & Summary -->
+                    <div class="post-more">
+                        <a href="page-blog-post-right-sidebar.html" class="btn btn-small">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Post -->
+            <div class="col-md-4 col-sm-6">
+                <div class="blog-post animated bounceInUp">
+                    <div class="post-info">
+                        <div class="post-date">
+                            <div class="date">08 MAR, 2017</div>
+                        </div>
+                        <div class="post-comments-count">
+                            <a href="page-blog-post-right-sidebar.html" title="Show Comments"><i
+                                    class="glyphicon glyphicon-comment icon-white"></i>16</a>
+                        </div>
+                    </div>
+                    <a href="page-blog-post-right-sidebar.html"><img src="img/blog2.jpg" class="post-image"
+                            alt="Post Title"/></a>
+                    <div class="post-title">
+                        <h3><a href="page-blog-post-right-sidebar.html">Another Post Title</a></h3>
+                    </div>
+                    <div class="post-summary">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium
+                            malesuada, dui est laoreet risus, ac rhoncus eros diam id odio. Duis elementum ligula eu
+                            ipsum condimentum accumsan.</p>
+                    </div>
+                    <div class="post-more">
+                        <a href="page-blog-post-right-sidebar.html" class="btn btn-small">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="blog-post animated bounceInUp">
+                    <div class="post-info">
+                        <div class="post-date">
+                            <div class="date">08 MAR, 2017</div>
+                        </div>
+                        <div class="post-comments-count">
+                            <a href="page-blog-post-right-sidebar.html" title="Show Comments"><i
+                                    class="glyphicon glyphicon-comment icon-white"></i>57</a>
+                        </div>
+                    </div>
+                    <a href="page-blog-post-right-sidebar.html"><img src="img/blog3.jpg" class="post-image"
+                            alt="Post Title"/></a>
+                    <div class="post-title">
+                        <h3><a href="page-blog-post-right-sidebar.html">Yet Another Post Title</a></h3>
+                    </div>
+                    <div class="post-summary">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium
+                            malesuada, dui est laoreet risus, ac rhoncus eros diam id odio. Duis elementum ligula eu
+                            ipsum condimentum accumsan.</p>
+                    </div>
+                    <div class="post-more">
+                        <a href="page-blog-post-right-sidebar.html" class="btn btn-small">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="blog-post animated bounceInUp">
+                    <div class="post-info">
+                        <div class="post-date">
+                            <div class="date">08 MAR, 2017</div>
+                        </div>
+                        <div class="post-comments-count">
+                            <a href="page-blog-post-right-sidebar.html" title="Show Comments"><i
+                                    class="glyphicon glyphicon-comment icon-white"></i>11</a>
+                        </div>
+                    </div>
+                    <a href="page-blog-post-right-sidebar.html"><img src="img/blog1.jpg" class="post-image"
+                            alt="Post Title"/></a>
+                    <div class="post-title">
+                        <h3><a href="page-blog-post-right-sidebar.html">Post Title</a></h3>
+                    </div>
+                    <div class="post-summary">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium
+                            malesuada, dui est laoreet risus, ac rhoncus eros diam id odio. Duis elementum ligula eu
+                            ipsum condimentum accumsan.</p>
+                    </div>
+                    <div class="post-more">
+                        <a href="page-blog-post-right-sidebar.html" class="btn btn-small">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="blog-post animated bounceInUp">
+                    <div class="post-info">
+                        <div class="post-date">
+                            <div class="date">08 MAR, 2017</div>
+                        </div>
+                        <div class="post-comments-count">
+                            <a href="page-blog-post-right-sidebar.html" title="Show Comments"><i
+                                    class="glyphicon glyphicon-comment icon-white"></i>16</a>
+                        </div>
+                    </div>
+                    <a href="page-blog-post-right-sidebar.html"><img src="img/blog2.jpg" class="post-image"
+                            alt="Post Title"/></a>
+                    <div class="post-title">
+                        <h3><a href="page-blog-post-right-sidebar.html">Another Post Title</a></h3>
+                    </div>
+                    <div class="post-summary">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium
+                            malesuada, dui est laoreet risus, ac rhoncus eros diam id odio. Duis elementum ligula eu
+                            ipsum condimentum accumsan.</p>
+                    </div>
+                    <div class="post-more">
+                        <a href="page-blog-post-right-sidebar.html" class="btn btn-small">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="blog-post animated bounceInUp">
+                    <div class="post-info">
+                        <div class="post-date">
+                            <div class="date">08 MAR, 2017</div>
+                        </div>
+                        <div class="post-comments-count">
+                            <a href="page-blog-post-right-sidebar.html" title="Show Comments"><i
+                                    class="glyphicon glyphicon-comment icon-white"></i>57</a>
+                        </div>
+                    </div>
+                    <a href="page-blog-post-right-sidebar.html"><img src="img/blog3.jpg" class="post-image"
+                            alt="Post Title"/></a>
+                    <div class="post-title">
+                        <h3><a href="page-blog-post-right-sidebar.html">Yet Another Post Title</a></h3>
+                    </div>
+                    <div class="post-summary">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis, nulla id pretium
+                            malesuada, dui est laoreet risus, ac rhoncus eros diam id odio. Duis elementum ligula eu
+                            ipsum condimentum accumsan.</p>
+                    </div>
+                    <div class="post-more">
+                        <a href="page-blog-post-right-sidebar.html" class="btn btn-small">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- contact modal -->
+<div class="modal fade" id="kontakt" role="dialog" data-success="Vielen Dank für Ihre Rückmeldung">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Kontakt</h4>
+            </div>
+            <div class="modal-body">
+                <p>Sie haben Fragen? Schreiben Sie uns.</p>
+                <form>
+                    <fieldset>
+                        <input type="text" name="email-adresse" value="" placeholder="Ihre E-Mail"/>
+                    </fieldset>
+                    <fieldset>
+                        <textarea placeholder="Ihre Nachricht"></textarea>
+                        <div class="g-recaptcha" data-sitekey="6LfyShcUAAAAAJM6_7lrLzQUG1XcbGAAJRSO8s3a"></div>
+                    </fieldset>
+                    <fieldset>
+                        <button type="submit" class="btn btn-primary">Absenden</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- error modal -->
+<div class="modal animated shake" id="codegenerator-error" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body clearfix text-center">
+                <p>Es ist ein Problem aufgetreten.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="/webjars/jquery/3.0.0/jquery.min.js" type="application/javascript"></script>
+<script src="/webjars/bootstrap/3.0.0/js/bootstrap.min.js" type="application/javascript"></script>
+<script src="/js/master.js" type="application/javascript"></script>
+
+</body>
 </html>
